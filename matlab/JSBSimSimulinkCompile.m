@@ -1,6 +1,6 @@
 disp('Compiling S-function from JSBSim...');
 % For Windows:
-mex -v -R2022b COMPFLAGS='$COMPFLAGS /DJSBSIM_STATIC_LINK' ./matlab/JSBSim_SFunction.cpp ./matlab/JSBSimInterface.cpp -I".\out\install\x64-Release\include\JSBSim" -L".\out\install\x64-Release\lib" -lJSBSim  wsock32.lib ws2_32.lib
+mex -v -R2017b COMPFLAGS='$COMPFLAGS /DJSBSIM_STATIC_LINK' ./matlab/JSBSim_SFunction.cpp ./matlab/JSBSimInterface.cpp -I".\out\install\x64-Release\include\JSBSim" -L".\out\install\x64-Release\lib" -lJSBSim  wsock32.lib ws2_32.lib
 % For Linux:
 %mex -v -R2017b CXXFLAGS='$CXXFLAGS -std=c++14' ./matlab/JSBSim_SFunction.cpp ./matlab/JSBSimInterface.cpp -I./src -L./src/.libs -lJSBSim
 % For MacOS:
